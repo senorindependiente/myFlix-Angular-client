@@ -149,8 +149,7 @@ export class FetchApiDataService {
     );
   }
 
-  // Need to add parameters that define the data at start of function 
-  // Need to add userData as a param to requests that need data
+  
 
   // user update his profile
   editUserProfile(userData: object): Observable<any> {
