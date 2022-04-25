@@ -14,9 +14,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { matDialogAnimations, MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
+import { UserRegistrationFormComponent } from './user-registration-form/user-registration-form.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, UserRegistrationFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatFormFieldModule,
     MatSnackBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
