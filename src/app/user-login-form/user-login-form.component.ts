@@ -35,6 +35,7 @@ loginUser(): void {
      this.snackBar.open("user logged in", "OK", {
         duration: 2000
      });
+     this.router.navigate(["movies"]); //when user login successfully, navigate to the movielist
     }, (result) => {
       console.log(result);
       this.snackBar.open(result, "OK", {
