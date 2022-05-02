@@ -1,0 +1,65 @@
+.user-profile {
+    background-color: #565656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+    
+  .usercard {
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    min-width: 300px;
+    width: 50%;
+    margin: 2rem;
+  }
+    
+  .mat-card-header {
+    padding: 3rem 1rem;
+    background-color: #565656;
+    color:  #fff;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+    display: flex;
+  }
+  
+  .mat-card-header .mat-card-title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mat-card-subtitle.mat-card-subtitle {
+    font-size: 1rem;
+    color:  #fff;
+    font-weight: 300;
+  }
+  
+  form.user-edit-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .mat-card-actions.usercard-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+
+    
+  .edit-button {
+    margin-right: 100px;
+    border-radius: 25px;
+    background-color: #565656;
+  }
+  
+  .delete-button {
+    border-radius: 25px;
+    background-color: #565656;
+  }
+  
+  
+    
