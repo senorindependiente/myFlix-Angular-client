@@ -4,7 +4,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-user-profile',
   templateUrl: './user-profile.component.html',
@@ -14,11 +13,11 @@ export class UserProfileComponent implements OnInit {
   userString: any = localStorage.getItem('user');
   user: any = JSON.parse(this.userString);
 
-  @Input() userData = { 
-    Username: this.user.Username, 
-    Email: this.user.Email, 
-    Password: '', 
-    Birthdate: this.user.Birthdate
+  @Input() userData = {
+    Username: this.user.Username,
+    Email: this.user.Email,
+    Password: '',
+    Birthdate: this.user.Birthdate,
   };
 
   constructor(
@@ -33,8 +32,6 @@ export class UserProfileComponent implements OnInit {
     console.log(this.userData);
   }
 
-
-   
   getUserProfile(): void {
     const UserID = localStorage.getItem('UserID');
     if (UserID) {
@@ -45,12 +42,11 @@ export class UserProfileComponent implements OnInit {
       });
     }
   }
-   
- 
+
   editUser(): void {
     console.log(this.userData);
     this.fetchApiData.editUserProfile(this.userData).subscribe((resp) => {
-      localStorage.setItem('user', JSON.stringify(resp));// update profile in localstorage
+      localStorage.setItem('user', JSON.stringify(resp)); // update profile in localstorage
       this.snackBar.open('Your profile was updated', 'OK', {
         duration: 4000,
       });
@@ -59,8 +55,6 @@ export class UserProfileComponent implements OnInit {
       });
     });
   }
-
-  
 
   deleteUser(): void {
     if (confirm('Are you sure you want to delete the profile?')) {
@@ -73,6 +67,4 @@ export class UserProfileComponent implements OnInit {
       this.router.navigate(['welcome']);
     }
   }
-
- 
 }

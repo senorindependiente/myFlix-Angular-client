@@ -24,7 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { GenreCardComponent } from './genre-card/genre-card.component';
 import { DirectorCardComponent } from './director-card/director-card.component';
-import { UserFavoritesComponent } from './user-favorites/user-favorites.component';
+
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
@@ -37,7 +37,7 @@ const appRoutes: Routes = [
 
 
 @NgModule({
-  declarations: [AppComponent, UserRegistrationFormComponent, UserLoginFormComponent, MovieCardComponent, WelcomePageComponent, UserProfileComponent, GenreCardComponent, DirectorCardComponent, UserFavoritesComponent],
+  declarations: [AppComponent, UserRegistrationFormComponent, UserLoginFormComponent, MovieCardComponent, WelcomePageComponent, UserProfileComponent, GenreCardComponent, DirectorCardComponent,],
   imports: [
     BrowserModule,
     AppRoutingModule,
