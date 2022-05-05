@@ -1,0 +1,21 @@
+
+.main-page {
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: #565656;
+    color:#fff;
+    padding: 25px;
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  
+  h1 {
+    font-size: 22px;
+  }

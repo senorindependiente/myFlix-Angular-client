@@ -1,1 +1,12 @@
-<p>genre-card works!</p>
+<mat-card>
+    <mat-card-title>{{ data.Name }}</mat-card-title><br>
+    <mat-dialog-content><b>Description:</b> {{ data.Description }}</mat-dialog-content>
+    <mat-card-actions>
+      <button 
+        mat-stroked-button 
+        mat-dialog-close 
+        class="btn">
+          Close
+      </button>
+    </mat-card-actions>
+  </mat-card>
