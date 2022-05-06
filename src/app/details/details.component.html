@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-content>
+      <img src={{data.ImagePath}} style="height: 250px;">
+    </mat-card-content>
+    <mat-card-title>{{ data.Title }}</mat-card-title><br>
+    <mat-card-content>{{ data.Description }}</mat-card-content>
+    <mat-card-actions>
+      <button 
+        mat-stroked-button  
+        mat-dialog-close 
+        class="btn">
+          Close
+      </button>
+    </mat-card-actions>
+  </mat-card>
