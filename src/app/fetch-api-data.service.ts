@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 import { Router } from '@angular/router';
 
 //Declaring the api url that will provide data for the client app
-const apiUrl = 'https://movieapiapp.herokuapp.com/'
+const apiUrl = 'https://movieapiapp.herokuapp.com/';
 //get the token from local storage
 const token = localStorage.getItem('token');
 // Get username from localStorage for URLs
