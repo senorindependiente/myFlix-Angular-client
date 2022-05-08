@@ -1,27 +1,35 @@
-# MyFlixAngularClient
+# myFlix-Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+### A client-side application, created with Angular, Angular Material and Sass, called myFlix based on its existing server-side code (REST API and database)
 
-## Development server
+> Live demo [_here_](https://senorindependiente.github.io/myFlix-Angular-client). <!-- If you have the project hosted somewhere, include the link here. -->
 
+## Table of Contents
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+
+
+## Technologies Used
+- Angular
+- Angular Material
+- Sass
+- Node.js
+
+
+## Features
+- Users can login ot register for an account at the welcome view.
+- Users are registered successfully and then be able to see a list of movies
+- Users can see movie, genre and director details as well as a short summary of the movie
+- Users can add movie to a personal favorite list
+- Users can remove movies from the personal favorite list
+- Users can change profile details and delete profile
+
+
+## Screenshots
+![Example screenshot](./img/screenshot.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
+
+## Setup
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
