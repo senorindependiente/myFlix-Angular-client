@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service'
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
+import { DetailsComponent } from '../details/details.component';
 
 @Component({
   selector: 'app-movie-card',
@@ -55,16 +55,16 @@ getGenre(name: string, description: string): void {
     });
   }
 
-// getDetails(title: string, imagePath: any, description: string): void {
-//   this.dialog.open(DetailsCardComponent, {
-//     data: {
-//       Title: title,
-//       ImagePath: imagePath,
-//       Description: description,
-//     },
-//     width: '500px'
-//    });
-//   }
+getDetails(title: string, imagePath: any, description: string): void {
+  this.dialog.open(DetailsComponent, {
+    data: {
+      Title: title,
+      ImagePath: imagePath,
+      Description: description,
+    },
+    width: '500px'
+   });
+  }
 
 getCurrentUser(): void {
   const username = localStorage.getItem('user');
