@@ -185,7 +185,7 @@ export class FetchApiDataService {
 /**
  * calls API endpoint to edit user info
  * @function editUserProfile
- * @param userCredentials 
+ * @param userData 
  * @param user
  * @returns updated user information in JSON format
  */
