@@ -28,6 +28,13 @@ constructor(
 ngOnInit(): void {
 }
 
+/**
+   * function for sending the form inputs to the backend
+   * @function registerUser
+   * @param userData {object}
+   * @return new user data in JSON format
+   */
+
 // This is the function responsible for sending the form inputs to the backend
 registerUser(): void {
     this.fetchApiData.userRegistration(this.userData).subscribe((result) => {

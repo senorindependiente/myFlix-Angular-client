@@ -26,6 +26,12 @@ ngOnInit(): void {
   this.getCurrentUser();
 }
 
+ /**
+   * function to show all movies
+   * @function getMovies
+   * @returns movies in JSON format
+   */
+
 getMovies(): void {
   this.fetchApiData.getAllMovies().subscribe((resp: any) => {
       this.movies = resp;
@@ -33,7 +39,12 @@ getMovies(): void {
       return this.movies;
     });
   }
-
+  /**
+   * open Director dialog
+   * @param name 
+   * @param bio 
+   * @param birth
+   */
 getDirector(name: string, bio: string, birth: string): void {
   this.dialog.open(DirectorCardComponent, {
     data: {
@@ -44,7 +55,11 @@ getDirector(name: string, bio: string, birth: string): void {
     width: '500px',
    });
   }
-
+  /**
+   * open Genre dialog
+   * @param name 
+   * @param description 
+   */
 getGenre(name: string, description: string): void {
   this.dialog.open(GenreCardComponent, {
     data: {
@@ -54,7 +69,12 @@ getGenre(name: string, description: string): void {
     width: '500px'
     });
   }
-
+/**
+   * open movie details dialog
+   * @param title 
+   * @param imagePath
+   * @param description 
+   */
 getDetails(title: string, imagePath: any, description: string): void {
   this.dialog.open(DetailsComponent, {
     data: {
@@ -65,7 +85,10 @@ getDetails(title: string, imagePath: any, description: string): void {
     width: '500px'
    });
   }
-
+/**
+ * function to get current users information and log it to the console
+ * @function getUserProfile
+ */
 getCurrentUser(): void {
   const username = localStorage.getItem('user');
   this.fetchApiData.getUserProfile().subscribe((resp: any) => { 
@@ -76,7 +99,13 @@ getCurrentUser(): void {
       console.log(currentFavs)
     });
   }
-
+/**
+ * function to let user add a movie to their favorite movies
+ * @function addFavoriteMovies
+ * @param id
+ * @param title 
+ * @returns movie object array in JSON format
+ */
 addFavoriteMovie(id: string, title: string): void {
   this.fetchApiData.addFavoriteMovie(id).subscribe((resp: any) => {
     this.snackBar.open(`${title} has been added to your favourites!`, 'OK', {
@@ -85,7 +114,13 @@ addFavoriteMovie(id: string, title: string): void {
     this.ngOnInit();
     });
   }
-
+  /**
+   * function to let user remove a movie from their favorite movies
+   * @function deleteFavoriteMovie
+   * @param id
+   * @param title 
+   * @returns updated users' fav movies in JSON format
+   */
 removeFavoriteMovie(id: string, title: string): void {
   this.fetchApiData.deleteFavoriteMovie(id).subscribe((resp: any) => {
     console.log(resp);
