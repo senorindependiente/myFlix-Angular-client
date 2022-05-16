@@ -95,7 +95,7 @@ getCurrentUser(): void {
       console.log(resp)
       const currentUser=resp.Username
       console.log(currentUser)
-      const currentFavs=resp.FavoriteMovies
+      const currentFavs=resp.favoriteMovies
       console.log(currentFavs)
     });
   }
