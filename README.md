@@ -5,11 +5,19 @@
 > Live demo [_here_](https://senorindependiente.github.io/myFlix-Angular-client). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
+* [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 
+
+## General Info
+
+Application that shows the user information about different movies like director, genre and summary. The user can also add/delete favorite movies to his personal profile once the user is registered and logged in.
+All the user authorization and movie information is taken from an external API.
+
+Key Features
 
 ## Technologies Used
 - Angular
