@@ -109,16 +109,16 @@ export class UserProfileComponent implements OnInit {
     getFavorites(): void {
       let movies: any[] = [];
       this.fetchApiData.getAllMovies().subscribe((res: any) => {
-        movies = res;
-        movies.forEach((movie: any) => {
-          if (this.user.favoriteMovies.includes(movie._id)) {
+        this.movies = res;
+        this.movies.forEach((movie: any) => {
+          if (this.user.FavoriteMovie.includes(movie._id)) {
             this.favoriteMovies.push(movie);
             this.displayElement = true;
           }
           });
         
       });
-      
+      console.log(this.favoriteMovies);
      
     }
 
