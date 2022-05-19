@@ -37,6 +37,7 @@ Key Features
 
 ## Screenshots
 ![Example screenshot](./src/screenshot1.PNG)
+![Example screenshot](./src/screenshot2.PNG)
 
 
 ## Setup
