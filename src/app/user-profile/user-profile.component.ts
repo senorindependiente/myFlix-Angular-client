@@ -109,8 +109,8 @@ export class UserProfileComponent implements OnInit {
     getFavorites(): void {
       let movies: any[] = [];
       this.fetchApiData.getAllMovies().subscribe((res: any) => {
-        this.movies = res;
-        this.movies.forEach((movie: any) => {
+        movies = res;
+        movies.forEach((movie: any) => {
           if (this.user.FavoriteMovie.includes(movie._id)) {
             this.favoriteMovies.push(movie);
             this.displayElement = true;
@@ -118,7 +118,7 @@ export class UserProfileComponent implements OnInit {
           });
         
       });
-      console.log(this.favoriteMovies);
+      
      
     }
 
