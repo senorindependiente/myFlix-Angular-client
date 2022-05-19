@@ -36,7 +36,7 @@ Key Features
 
 
 ## Screenshots
-![Example screenshot](.\src\assets\screenshot1.PNG)
+![Example screenshot](./img/screenshot1.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Setup
