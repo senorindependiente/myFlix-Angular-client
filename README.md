@@ -36,7 +36,7 @@ Key Features
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](C:\Users\pinge\Documents\myFlix-Angular-client\src\assets\screenshot1.PNG)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Setup
