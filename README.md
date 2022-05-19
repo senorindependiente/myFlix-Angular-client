@@ -36,8 +36,8 @@ Key Features
 
 
 ## Screenshots
-![Example screenshot](/img/screenshot1.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![Example screenshot](img/screenshot1.png)
+
 
 ## Setup
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
